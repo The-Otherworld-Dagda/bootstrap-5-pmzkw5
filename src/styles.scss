@@ -3,5 +3,22 @@
 // $border-radius: 1px;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
 
-.towcard {border:1px solid; border-radius: 15px;padding:50px;}
+/** BODY **/
+body {width:74%;margin:auto;background:#272823;color:#fff;}
+@media (max-width:767px) {
+  body {width:84%;}
+}
+
+/** HEADINGS & TEXT **/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: 'Odibee Sans', cursive;}
+h3, .h3 {font-size: clamp(1rem, -0.2500rem + 7.1429vw, 3.5rem);}
+
+/** IMAGES **/
+img {width:100%;}
+
+/** CLASSES **/
+.towcard {border:1px solid #000; border-radius: 15px;padding:0px;}
+.towcard img {border-radius:15px;}
+.towcardinfo {margin:auto;padding-left:50px;}
